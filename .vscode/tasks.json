@@ -3,6 +3,13 @@
     "tasks": [
         {
             "type": "shell",
+            "label": "make bin",
+            "command": "New-Item -ItemType Directory -Force -Path ${workspaceFolder}\\bin",
+            "problemMatcher": []
+            
+        },
+        {
+            "type": "shell",
             "label": "build active file",
             "command": "g++",
             "args": [
@@ -17,7 +24,10 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "dependsOn": [
+                "make bin"
+            ],
         }
     ]
 }
