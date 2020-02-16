@@ -4,20 +4,14 @@
         {
             "type": "shell",
             "label": "make bin",
-            "command": "New-Item -ItemType Directory -Force -Path ${workspaceFolder}\\bin",
+            "command": "New-Item -ItemType Directory -Force -Path '${workspaceFolder}\\bin'",
             "problemMatcher": []
             
         },
         {
             "type": "shell",
-            "label": "build active file",
-            "command": "g++",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe"
-            ],
+            "label": "build files in current dir",
+            "command": "g++ *.cpp -o bin\\${fileBasenameNoExtension}.exe",
             "problemMatcher": [
                 "$gcc"
             ],
