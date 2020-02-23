@@ -20,7 +20,7 @@
             "command": "g++",
             "args": [
                 "-g",
-                "$*.cpp",
+                "*.cpp",
                 "-o",
                 "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe"
             ],
