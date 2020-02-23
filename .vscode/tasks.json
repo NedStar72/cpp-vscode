@@ -9,9 +9,15 @@
             
         },
         {
-            "type": "shell",
+            "type": "process",
             "label": "build files in current dir",
-            "command": "g++ *.cpp -o bin\\${fileBasenameNoExtension}.exe",
+            "command": "g++",
+            "args": [
+                "-g",
+                "$*.cpp",
+                "-o",
+                "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe"
+            ],
             "problemMatcher": [
                 "$gcc"
             ],
