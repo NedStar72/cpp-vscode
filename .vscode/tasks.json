@@ -4,9 +4,15 @@
         {
             "type": "shell",
             "label": "make bin",
-            "command": "New-Item -ItemType Directory -Force -Path '${workspaceFolder}\\bin'",
+            "command": "New-Item",
+            "args": [
+                "-ItemType",
+                "Directory",
+                "-Force",
+                "-Path",
+                "${workspaceFolder}\\bin"
+            ],
             "problemMatcher": []
-            
         },
         {
             "type": "process",
