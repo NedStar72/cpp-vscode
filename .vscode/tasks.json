@@ -2,8 +2,8 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "shell",
             "label": "make bin",
+            "type": "shell",
             "command": "New-Item",
             "args": [
                 "-ItemType",
@@ -15,8 +15,8 @@
             "problemMatcher": []
         },
         {
-            "type": "process",
             "label": "build files in current dir",
+            "type": "process",
             "command": "g++",
             "args": [
                 "-g",
