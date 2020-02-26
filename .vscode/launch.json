@@ -20,7 +20,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "build active file"
+            "preLaunchTask": "build files in current dir"
         }
     ]
 }
