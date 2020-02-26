@@ -21,6 +21,7 @@
             "args": [
                 "-g",
                 "*.cpp",
+                "cpp\\*.cpp",
                 "-o",
                 "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe"
             ],
