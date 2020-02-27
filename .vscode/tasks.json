@@ -23,7 +23,8 @@
                 "*.cpp",
                 "cpp\\*.cpp",
                 "-o",
-                "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe"
+                "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe",
+                "-Wall"
             ],
             "problemMatcher": [
                 "$gcc"
